@@ -1,16 +1,16 @@
 # Implementation Plan: core_lobby_20260411
 
-## Phase 1: Project Setup and Backend Foundation
-- [ ] Task: Initialize FastAPI project structure and testing framework
-    - [ ] Write Tests: Setup pytest and basic server health check test
-    - [ ] Implement Feature: Create basic FastAPI app and health endpoint
-- [ ] Task: Implement Session Management (In-Memory)
-    - [ ] Write Tests: Test session creation, joining, and state tracking
-    - [ ] Implement Feature: Create SessionManager class to hold active lobbies and users
-- [ ] Task: Implement WebSocket Endpoint
-    - [ ] Write Tests: Test WebSocket connection and message broadcasting
-    - [ ] Implement Feature: Create `/ws/{session_id}/{user_id}` endpoint for real-time communication
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Setup and Backend Foundation' (Protocol in workflow.md)
+## Phase 1: Project Setup and Backend Foundation [checkpoint: 8b8ce80]
+- [x] Task: Initialize FastAPI project structure and testing framework [577d3ad]
+    - [x] Write Tests: Setup pytest and basic server health check test
+    - [x] Implement Feature: Create basic FastAPI app and health endpoint
+- [x] Task: Implement Session Management (In-Memory) [24ea290]
+    - [x] Write Tests: Test session creation, joining, and state tracking
+    - [x] Implement Feature: Create SessionManager class to hold active lobbies and users
+- [x] Task: Implement WebSocket Endpoint [8ba0557]
+    - [x] Write Tests: Test WebSocket connection and message broadcasting
+    - [x] Implement Feature: Create `/ws/{session_id}/{user_id}` endpoint for real-time communication
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Project Setup and Backend Foundation' (Protocol in workflow.md) [8b8ce80]
 
 ## Phase 2: Frontend Foundation and Lobby System
 - [ ] Task: Initialize React project structure and testing framework
