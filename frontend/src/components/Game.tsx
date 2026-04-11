@@ -36,14 +36,19 @@ export default function Game() {
 
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
     // For development we assume backend on port 8000
-    const host = window.location.hostname === 'localhost' ? 'localhost:8000' : window.location.host
+    const backendPort = '8000'
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    const host = isLocal ? `${window.location.hostname}:${backendPort}` : window.location.host
     const socketUrl = `${protocol}//${host}/ws/${sessionId}/${userId}?name=${encodeURIComponent(userName)}`
+
+    console.log('Connecting to WebSocket:', socketUrl)
 
     const socket = new WebSocket(socketUrl)
     socketRef.current = socket
 
     socket.onopen = () => {
-      console.log('WebSocket connected')
+      console.log('WebSocket connected to', socketUrl)
+      setError(null)
     }
 
     socket.onmessage = (event) => {
