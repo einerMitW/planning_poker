@@ -22,9 +22,9 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Frontend Foundation and Lobby System' (Protocol in workflow.md) [5d006e9]
 
 ## Phase 3: Voting System and Game Logic
-- [ ] Task: Implement Fibonacci Card Deck UI
-    - [ ] Write Tests: Test rendering of Fibonacci cards (0, 1, 2, 3, 5, 8, 13, 21, Skip) and selection state
-    - [ ] Implement Feature: Create Card Deck component for participants to cast their vote
+- [x] Task: Implement Fibonacci Card Deck UI [e16524b]
+    - [x] Write Tests: Test rendering of Fibonacci cards (0, 1, 2, 3, 5, 8, 13, 21, Skip) and selection state
+    - [x] Implement Feature: Create Card Deck component for participants to cast their vote
 - [ ] Task: Implement WebSocket Voting Logic
     - [ ] Write Tests: Test `vote` event emission from client and handling on server
     - [ ] Implement Feature: Send vote to server, update session state, and broadcast updated state to all clients
