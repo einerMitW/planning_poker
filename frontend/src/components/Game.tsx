@@ -77,6 +77,12 @@ export default function Game() {
     }
   }
 
+  const handleReveal = () => {
+    if (socketRef.current && socketRef.current.readyState === WebSocket.OPEN) {
+      socketRef.current.send(JSON.stringify({ type: 'reveal' }))
+    }
+  }
+
   if (error) {
     return (
       <div className="error">
@@ -102,11 +108,24 @@ export default function Game() {
         <ul>
           {users.map((user, index) => (
             <li key={index}>
-              {user.name} {user.vote !== null ? '✅' : '⏳'}
+              {user.name}: {session.revealed ? (user.vote ?? 'No vote') : (user.vote ? '✅' : '⏳')}
             </li>
           ))}
         </ul>
       </div>
+
+      {session.revealed && session.average !== null && (
+        <div className="results">
+          <h2>Average: {session.average.toFixed(1)}</h2>
+        </div>
+      )}
+
+      {!session.revealed && (
+        <button className="reveal-button" onClick={handleReveal}>
+          Reveal Votes
+        </button>
+      )}
+
       <CardDeck onVote={handleVote} selectedVote={currentUserVote} />
     </div>
   )
