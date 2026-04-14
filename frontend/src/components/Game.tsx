@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import CardDeck from './CardDeck'
 
 interface User {
   id: string
@@ -70,6 +71,12 @@ export default function Game() {
     }
   }, [sessionId, navigate])
 
+  const handleVote = (vote: string) => {
+    if (socketRef.current && socketRef.current.readyState === WebSocket.OPEN) {
+      socketRef.current.send(JSON.stringify({ type: 'vote', vote }))
+    }
+  }
+
   if (error) {
     return (
       <div className="error">
@@ -84,6 +91,8 @@ export default function Game() {
   }
 
   const users = Object.values(session.users)
+  const userId = localStorage.getItem('userId')
+  const currentUserVote = userId ? session.users[userId]?.vote : null
 
   return (
     <div className="game-container">
@@ -91,14 +100,14 @@ export default function Game() {
       <div className="users-list">
         <h2>Participants</h2>
         <ul>
-          {users.map((user) => (
-            <li key={user.id}>
+          {users.map((user, index) => (
+            <li key={index}>
               {user.name} {user.vote !== null ? '✅' : '⏳'}
             </li>
           ))}
         </ul>
       </div>
-      <p>Voting cards will be implemented in Phase 3.</p>
+      <CardDeck onVote={handleVote} selectedVote={currentUserVote} />
     </div>
   )
 }

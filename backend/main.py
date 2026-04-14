@@ -40,9 +40,10 @@ async def websocket_endpoint(websocket: WebSocket, session_id: str, user_id: str
     
     try:
         while True:
-            # For now, we just wait for the client to close or send something we might handle later
             data = await websocket.receive_json()
-            # Handle incoming messages like 'vote', 'reveal', 'reset' in future tasks
+            if data.get("type") == "vote":
+                session_manager.submit_vote(session_id, user_id, data.get("vote"))
+                await manager.broadcast_session_state(session_id)
     except WebSocketDisconnect:
         manager.disconnect(websocket, session_id)
         # We might want to remove the user from the session too, but for MVP keep them as offline
