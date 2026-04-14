@@ -21,7 +21,7 @@
     - [x] Implement Feature: Create Join Component that accepts a display name and connects to the WebSocket
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Frontend Foundation and Lobby System' (Protocol in workflow.md) [5d006e9]
 
-## Phase 3: Voting System and Game Logic
+## Phase 3: Voting System and Game Logic [checkpoint: 620b8b4]
 - [x] Task: Implement Fibonacci Card Deck UI [e16524b]
     - [x] Write Tests: Test rendering of Fibonacci cards (0, 1, 2, 3, 5, 8, 13, 21, Skip) and selection state
     - [x] Implement Feature: Create Card Deck component for participants to cast their vote
@@ -34,4 +34,4 @@
 - [x] Task: Implement Reset Round Logic [aad1b3a]
     - [x] Write Tests: Test `reset` event to clear votes and start a new round
     - [x] Implement Feature: Add reset functionality for the host
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Voting System and Game Logic' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Voting System and Game Logic' (Protocol in workflow.md) [620b8b4]
