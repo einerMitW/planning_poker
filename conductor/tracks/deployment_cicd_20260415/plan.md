@@ -1,7 +1,7 @@
 # Implementation Plan: deployment_cicd
 
 ## Phase 1: GitHub Actions CI Pipeline
-- [ ] Task: Setup GitHub Actions workflow for backend tests
+- [x] Task: Setup GitHub Actions workflow for backend tests [f027e92]
     - [ ] Write Tests: Ensure backend tests run successfully locally.
     - [ ] Implement Feature: Create `.github/workflows/ci.yml` and configure Python environment and pytest to run on push/PR to main.
 - [ ] Task: Expand CI Pipeline for frontend tests
