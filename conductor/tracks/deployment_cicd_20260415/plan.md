@@ -9,7 +9,7 @@
     - [ ] Implement Feature: Update `ci.yml` to include Node.js environment and frontend test execution.
 - [x] Task: Conductor - User Manual Verification 'Phase 1: GitHub Actions CI Pipeline' (Protocol in workflow.md) [be8d394]
 
-## Phase 2: Docker Containerization
+## Phase 2: Docker Containerization [checkpoint: f7a9b45]
 - [x] Task: Create Nginx Configuration [858ccb7]
     - [ ] Write Tests: Verify proxy behavior locally if possible.
     - [ ] Implement Feature: Create `nginx.conf` to serve static frontend files on port 80 and proxy `/api` and WebSocket traffic to the backend.
@@ -19,10 +19,10 @@
 - [x] Task: Create Multi-stage Dockerfile [2957269]
     - [ ] Write Tests: Verify the image builds successfully.
     - [ ] Implement Feature: Create `Dockerfile` at the root with a Node build stage for the frontend, and a Python production stage containing Nginx, backend code, and built frontend assets.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Docker Containerization' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Docker Containerization' (Protocol in workflow.md) [f7a9b45]
 
 ## Phase 3: Documentation and Final Verification
 - [ ] Task: Document Deployment and Networking
     - [ ] Write Tests: N/A
     - [ ] Implement Feature: Update `README.md` with instructions on how to build the Docker image and run it with port 2323 mapped (`-p 2323:80`).
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Documentation and Final Verification' (Protocol in workflow.md)
+- [ ] Task: Conductor - User Manual Verification 'Phase 3: Documentation and Final Verification' (Protocol in workflow.md)workflow.md)
