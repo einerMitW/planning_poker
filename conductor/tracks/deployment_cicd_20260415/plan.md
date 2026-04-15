@@ -13,7 +13,7 @@
 - [x] Task: Create Nginx Configuration [858ccb7]
     - [ ] Write Tests: Verify proxy behavior locally if possible.
     - [ ] Implement Feature: Create `nginx.conf` to serve static frontend files on port 80 and proxy `/api` and WebSocket traffic to the backend.
-- [ ] Task: Create Start Script for Container
+- [x] Task: Create Start Script for Container [7fdc090]
     - [ ] Write Tests: Test script execution.
     - [ ] Implement Feature: Create a `start.sh` script to launch both Uvicorn (backend) and Nginx within the single container.
 - [ ] Task: Create Multi-stage Dockerfile
