@@ -22,7 +22,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Docker Containerization' (Protocol in workflow.md) [f7a9b45]
 
 ## Phase 3: Documentation and Final Verification
-- [ ] Task: Document Deployment and Networking
+- [x] Task: Document Deployment and Networking [d774148]
     - [ ] Write Tests: N/A
     - [ ] Implement Feature: Update `README.md` with instructions on how to build the Docker image and run it with port 2323 mapped (`-p 2323:80`).
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Documentation and Final Verification' (Protocol in workflow.md)workflow.md)
+- [ ] Task: Conductor - User Manual Verification 'Phase 3: Documentation and Final Verification' (Protocol in workflow.md)
