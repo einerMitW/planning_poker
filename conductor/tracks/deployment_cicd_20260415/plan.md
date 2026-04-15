@@ -16,7 +16,7 @@
 - [x] Task: Create Start Script for Container [7fdc090]
     - [ ] Write Tests: Test script execution.
     - [ ] Implement Feature: Create a `start.sh` script to launch both Uvicorn (backend) and Nginx within the single container.
-- [ ] Task: Create Multi-stage Dockerfile
+- [x] Task: Create Multi-stage Dockerfile [2957269]
     - [ ] Write Tests: Verify the image builds successfully.
     - [ ] Implement Feature: Create `Dockerfile` at the root with a Node build stage for the frontend, and a Python production stage containing Nginx, backend code, and built frontend assets.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Docker Containerization' (Protocol in workflow.md)
