@@ -17,11 +17,29 @@ Echtzeit-Anwendung zur kollaborativen Aufwandsschätzung in agilen Teams. Die An
 | **Realtime** | WebSockets | Standard RFC 6455 |
 | **Testing** | Pytest / Vitest | 9.x / 4.x |
 
+## Deployment (Docker)
+
+Die Anwendung kann als ein einzelnes, optimiertes Docker-Image bereitgestellt werden, das sowohl das Frontend (via Nginx) als auch das Backend (via FastAPI) enthält.
+
+### 1. Image bauen
+Führen Sie den folgenden Befehl im Hauptverzeichnis des Projekts aus:
+```bash
+docker build -t planning-poker .
+```
+
+### 2. Container starten
+Starten Sie den Container und mappen Sie den internen Port 80 auf den gewünschten Host-Port (z.B. `2323`):
+```bash
+docker run -d -p 2323:80 --name planning-poker planning-poker
+```
+Die Anwendung ist nun unter `http://localhost:2323` erreichbar.
+
 ## Infrastruktur & Ports
 | Dienst | Port | Protokoll | Zweck |
 | :--- | :--- | :--- | :--- |
-| **Backend** | `8000` | HTTP/WS | API-Endpunkte & WebSocket-Server |
-| **Frontend** | `5173` | HTTP | Vite Development Server |
+| **Unified App (Docker)** | `2323` | HTTP | Frontend & API (via Nginx Proxy) |
+| **Backend (Standalone)** | `8000` | HTTP/WS | API-Endpunkte & WebSocket-Server |
+| **Frontend (Dev)** | `5173` | HTTP | Vite Development Server |
 
 ## Voraussetzungen
 - **Python 3.12+**
