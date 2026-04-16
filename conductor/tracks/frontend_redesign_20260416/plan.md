@@ -12,9 +12,9 @@
     - [x] Write tests for Lobby component (empty fields validation, join trigger).
     - [x] Create `Join.tsx` using Stitch-inspired components and DHBW styling.
     - [x] Implement validation logic and error messages.
-- [ ] Task: Connect Lobby to Backend
-    - [ ] Write tests for WebSocket connection and session creation/join.
-    - [ ] Integrate WebSocket logic to handle Lobby actions.
+- [x] Task: Connect Lobby to Backend a163529
+    - [x] Write tests for WebSocket connection and session creation/join.
+    - [x] Integrate WebSocket logic to handle Lobby actions.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Lobby Screen Implementation' (Protocol in workflow.md)
 
 ## Phase 3: Game Screen & Voting (TDD)
