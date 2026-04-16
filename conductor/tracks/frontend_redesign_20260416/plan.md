@@ -1,31 +1,31 @@
 # Implementation Plan: Frontend Redesign with Stitch
 
-## Phase 1: Preparation & Design Sync
-- [ ] Task: Synchronize Stitch Design and Setup Environment
-    - [ ] Analyze Stitch project `projects/16760718228231401515` (Planing Poker) to understand the design tokens and layout.
-    - [ ] Create a new frontend structure to replace `frontend/src`.
-    - [ ] Install any necessary dependencies for the new design system (e.g., specific fonts, icons).
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Preparation & Design Sync' (Protocol in workflow.md)
+## Phase 1: Preparation & Design Sync [checkpoint: 0d41469]
+- [x] Task: Synchronize Stitch Design and Setup Environment f1ad447
+    - [x] Analyze Stitch project `projects/16760718228231401515` (Planing Poker) to understand the design tokens and layout.
+    - [x] Create a new frontend structure to replace `frontend/src`.
+    - [x] Install any necessary dependencies for the new design system (e.g., specific fonts, icons).
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Preparation & Design Sync' (Protocol in workflow.md) 0d41469
 
-## Phase 2: Lobby Screen Implementation (TDD)
-- [ ] Task: Implement Lobby Screen UI and Validation
-    - [ ] Write tests for Lobby component (empty fields validation, join trigger).
-    - [ ] Create `Join.tsx` using Stitch-inspired components and DHBW styling.
-    - [ ] Implement validation logic and error messages.
-- [ ] Task: Connect Lobby to Backend
-    - [ ] Write tests for WebSocket connection and session creation/join.
-    - [ ] Integrate WebSocket logic to handle Lobby actions.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Lobby Screen Implementation' (Protocol in workflow.md)
+## Phase 2: Lobby Screen Implementation (TDD) [checkpoint: 4088da7]
+- [x] Task: Implement Lobby Screen UI and Validation 713ddb2
+    - [x] Write tests for Lobby component (empty fields validation, join trigger).
+    - [x] Create `Join.tsx` using Stitch-inspired components and DHBW styling.
+    - [x] Implement validation logic and error messages.
+- [x] Task: Connect Lobby to Backend a163529
+    - [x] Write tests for WebSocket connection and session creation/join.
+    - [x] Integrate WebSocket logic to handle Lobby actions.
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Lobby Screen Implementation' (Protocol in workflow.md) 4088da7
 
 ## Phase 3: Game Screen & Voting (TDD)
-- [ ] Task: Implement Game Screen UI & Participants List
-    - [ ] Write tests for Game screen layout and participant rendering.
-    - [ ] Create `Game.tsx` using Stitch-inspired components.
-    - [ ] Implement real-time participant list updates.
-- [ ] Task: Implement Voting Deck and Actions
-    - [ ] Write tests for card selection and vote submission.
-    - [ ] Create `CardDeck.tsx` with Fibonacci + Special cards.
-    - [ ] Implement Reveal and Reset functionality.
+- [x] Task: Implement Game Screen UI & Participants List a440abe
+    - [x] Write tests for Game screen layout and participant rendering.
+    - [x] Create `Game.tsx` using Stitch-inspired components.
+    - [x] Implement real-time participant list updates.
+- [x] Task: Implement Voting Deck and Actions 9a47502
+    - [x] Write tests for card selection and vote submission.
+    - [x] Create `CardDeck.tsx` with Fibonacci + Special cards.
+    - [x] Implement Reveal and Reset functionality.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Game Screen & Voting' (Protocol in workflow.md)
 
 ## Phase 4: Results, Polish & Final Integration
