@@ -18,10 +18,10 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Lobby Screen Implementation' (Protocol in workflow.md) 4088da7
 
 ## Phase 3: Game Screen & Voting (TDD)
-- [ ] Task: Implement Game Screen UI & Participants List
-    - [ ] Write tests for Game screen layout and participant rendering.
-    - [ ] Create `Game.tsx` using Stitch-inspired components.
-    - [ ] Implement real-time participant list updates.
+- [x] Task: Implement Game Screen UI & Participants List a440abe
+    - [x] Write tests for Game screen layout and participant rendering.
+    - [x] Create `Game.tsx` using Stitch-inspired components.
+    - [x] Implement real-time participant list updates.
 - [ ] Task: Implement Voting Deck and Actions
     - [ ] Write tests for card selection and vote submission.
     - [ ] Create `CardDeck.tsx` with Fibonacci + Special cards.
