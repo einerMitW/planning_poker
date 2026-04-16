@@ -1,0 +1,76 @@
+.card-deck {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.deck-header {
+  margin-bottom: var(--spacing-sm);
+}
+
+.deck-header h2 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-on-surface);
+  opacity: 0.6;
+  font-weight: 600;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+.card {
+  width: 64px;
+  height: 88px;
+  background-color: var(--color-surface-container-lowest);
+  border: 2px solid var(--color-surface-container-high);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  outline: none;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary-container);
+  box-shadow: 0 4px 12px rgba(226, 0, 26, 0.1);
+}
+
+.card.selected {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  border-color: var(--color-primary-container);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(226, 0, 26, 0.2);
+}
+
+.card-value {
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-on-surface);
+  transition: color 0.2s;
+}
+
+.card.selected .card-value {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 56px;
+    height: 76px;
+  }
+  
+  .card-value {
+    font-size: 1.25rem;
+  }
+}
