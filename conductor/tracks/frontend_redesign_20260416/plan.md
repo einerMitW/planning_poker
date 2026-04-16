@@ -1,17 +1,17 @@
 # Implementation Plan: Frontend Redesign with Stitch
 
-## Phase 1: Preparation & Design Sync
+## Phase 1: Preparation & Design Sync [checkpoint: 0d41469]
 - [x] Task: Synchronize Stitch Design and Setup Environment f1ad447
-    - [ ] Analyze Stitch project `projects/16760718228231401515` (Planing Poker) to understand the design tokens and layout.
-    - [ ] Create a new frontend structure to replace `frontend/src`.
-    - [ ] Install any necessary dependencies for the new design system (e.g., specific fonts, icons).
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Preparation & Design Sync' (Protocol in workflow.md)
+    - [x] Analyze Stitch project `projects/16760718228231401515` (Planing Poker) to understand the design tokens and layout.
+    - [x] Create a new frontend structure to replace `frontend/src`.
+    - [x] Install any necessary dependencies for the new design system (e.g., specific fonts, icons).
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Preparation & Design Sync' (Protocol in workflow.md) 0d41469
 
 ## Phase 2: Lobby Screen Implementation (TDD)
-- [ ] Task: Implement Lobby Screen UI and Validation
-    - [ ] Write tests for Lobby component (empty fields validation, join trigger).
-    - [ ] Create `Join.tsx` using Stitch-inspired components and DHBW styling.
-    - [ ] Implement validation logic and error messages.
+- [x] Task: Implement Lobby Screen UI and Validation 713ddb2
+    - [x] Write tests for Lobby component (empty fields validation, join trigger).
+    - [x] Create `Join.tsx` using Stitch-inspired components and DHBW styling.
+    - [x] Implement validation logic and error messages.
 - [ ] Task: Connect Lobby to Backend
     - [ ] Write tests for WebSocket connection and session creation/join.
     - [ ] Integrate WebSocket logic to handle Lobby actions.
