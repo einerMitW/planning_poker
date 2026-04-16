@@ -7,9 +7,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app-container">
-        <header>
-          <h1>Planning Poker</h1>
-        </header>
         <main>
           <Routes>
             <Route path="/" element={<Join />} />
