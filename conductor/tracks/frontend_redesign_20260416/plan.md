@@ -22,10 +22,10 @@
     - [x] Write tests for Game screen layout and participant rendering.
     - [x] Create `Game.tsx` using Stitch-inspired components.
     - [x] Implement real-time participant list updates.
-- [ ] Task: Implement Voting Deck and Actions
-    - [ ] Write tests for card selection and vote submission.
-    - [ ] Create `CardDeck.tsx` with Fibonacci + Special cards.
-    - [ ] Implement Reveal and Reset functionality.
+- [x] Task: Implement Voting Deck and Actions 9a47502
+    - [x] Write tests for card selection and vote submission.
+    - [x] Create `CardDeck.tsx` with Fibonacci + Special cards.
+    - [x] Implement Reveal and Reset functionality.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Game Screen & Voting' (Protocol in workflow.md)
 
 ## Phase 4: Results, Polish & Final Integration
