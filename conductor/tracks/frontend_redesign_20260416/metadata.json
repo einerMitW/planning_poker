@@ -1,0 +1,8 @@
+{
+  "track_id": "frontend_redesign_20260416",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-04-16T14:00:00Z",
+  "updated_at": "2026-04-16T14:00:00Z",
+  "description": "Redesign the frontend using Stitch and the DHBW design system. Implement Lobby and Game screens based on existing backend functionality."
+}
